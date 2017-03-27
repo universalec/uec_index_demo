@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>汎宇電商</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<!-- css -->
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/bootstrap-theme.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+<link href="css/animate.css" rel="stylesheet" />
+<link href="css/hover-min.css" rel="stylesheet" />
+<!-- js -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+<script type="text/javascript" src="scripts/jquery.parallax-1.1.3.js"></script>
+<script type="text/javascript" src="scripts/jquery.localscroll-1.2.7-min.js"></script>
+<script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
+
+<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/wow.min.js"></script>
+
+<script type="text/javascript">
+
+$(window).load(function() {
+    $("#flexiselDemo1").flexisel({
+								 
+								 visibleItems: 5,
+        itemsToScroll: 3,
+        animationSpeed: 450,
+        infinite: true,
+        navigationTargetSelector: null,
+						autoPlay: {
+            enable: true,
+            interval: 5000,
+            pauseOnHover: true
+        }     		 
+								 
+								 
+								 });
+
+});
+</script>
+<script>
+new WOW().init();
+</script>
+<script>
+wow = new WOW(
+                      {
+                      boxClass:'wow',//默認
+                      animateClass:'animated',//默認
+                      offset:0,//默認值
+                      mobile:true,//默認
+                      live:true //默認值
+                    }
+                    )
+                    wow.init();
+</script>
+<script type="text/javascript">
+$(function(){
+	//.parallax(xPosition, speedFactor, outerHeight) 設定選項:
+	//xPosition - 水平位置
+	//speedFactor - 滾動速度
+	$('#intro').parallax("50%", 0.1);
+	$('#second').parallax("50%", 0.1);
+	$('.bg').parallax("50%", 0.4);
+	$('#third').parallax("50%", 0.3);
+	$('.einvoice').parallax("50%", 0.1);
+	$('.performance').parallax("50%", 0.3);
+});
+</script>
+
+
+</head>
+<body>
+<div id="wrapper">
+  <!-- start header -->
+  <div class="topbar"></div>
+  <div class="header">
+    <div class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo" /></a> </div>
+        <div class="navbar-collapse collapse ">
+          <ul class="nav navbar-nav">
+            <li class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle">關於汎宇<b class="caret"></b></a>
+             <ul class="dropdown-menu">
+                <li><a href="#">公司簡介</a></li>
+                <li><a href="#">大事紀</a></li>
+                <li><a href="#">經營團隊</a></li>
+             </ul>
+            </li>
+            <li class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle">服務方案<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">通關網路服務</a></li>
+                <li><a href="services_einvoice.html">電子發票</a></li>
+                <li><a href="#">ICT資服暨專案服務</a></li>
+                <li><a href="#">電子金融</a></li>
+                <li><a href="#">企業服務</a></li>
+                <li><a href="#">環保集點</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">案例實績<b class="caret"></b></a>
+             <ul class="dropdown-menu">
+                <li><a href="#">汎宇客戶</a></li>
+                <li><a href="#">獲獎肯定</a></li>
+                <li><a href="#">近期案例</a></li>
+             </ul>
+            </li>
+            <li><a href="#">客服中心</a></li>
+            <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">人才招募<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">徵才訊息</a></li>
+                <li><a href="#">公司福利</a></li>
+                <li><a href="#">職缺連結</a></li>
+             </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end header -->
+  
+  
+  <!-- banner開始 -->
+  <div id="carousel-example-generic" class="carousel slide banner" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active"> <img src="img/picture_03.jpg" alt="">
+        <div class="carousel-caption">
+          <!--可以放東西-->
+        </div>
+      </div>
+      <div class="item"> <img src="img/picture_02.png" alt="">
+        <div class="carousel-caption">
+          <!--可以放東西-->
+        </div>
+      </div>
+      <div class="item"> <img src="img/picture_02.5.png" alt="">
+        <div class="carousel-caption">
+          <!--可以放東西-->
+        </div>
+      </div>
+    </div>
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left " aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
+  <!-- bannerend -->
+  
+  
+  
+
+  
+  
+    <!--main-services開始-->
+    <div class="main-services">
+      <div class="container">
+      
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-title text-center">
+              <h2 class="wow animated fadeInUp">主要服務方案內容</h2>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row wow animated fadeInUp">
+          <div class="col-md-4  col-sm-6"><div class="services_list"><a class="hvr-float-shadow" href="#"><img src="img/picture_05.png" width="100%" height=""></a></div></div>
+          <div class="col-md-4  col-sm-6">
+            <div class=""><div class="services_list"><a  class="hvr-float-shadow" href="#"><img src="img/picture_07.png" width="100%" height="" ></a></div></div>
+          </div>
+          <div class="col-md-4  col-sm-6"><div class="services_list"><a class="hvr-float-shadow" href="#"><img src="img/picture_09.png" width="100%" height=""> </a></div></div>
+          <p class="space">&nbsp;</p>
+       
+          <div class="col-md-4  col-sm-6"><div class="services_list"><a class="hvr-float-shadow" href="#"><img src="img/picture_14.png" width="100%" height=""></a></div></div>
+          <div class="col-md-4  col-sm-6"><div class="services_list"><a class="hvr-float-shadow" href="#"><img src="img/picture_15.png" width="100%" height=""></a></div></div>
+          <div class="col-md-4  col-sm-6"><div class="services_list"><a class="hvr-float-shadow" href="#"><img src="img/picture_16.png" width="100%" height=""></a></div></div>
+       </div>
+       
+      </div>
+    </div>
+    <!--main-service結束-->
+    
+    
+     <!--einvoice開始-->
+    <div class="einvoice">
+  
+    
+      <div class="container">
+        <div class="row">
+        
+        
+
+                <div class="col-md-6">
+                  <div class="einvoice_content">
+                <h2 class="wow animated fadeInUp">電子發票</h2>
+                        <p class="wow animated fadeInUp">汎宇提供B2G、B2B與B2C等多樣、完整的電子發票解決方案，協助合作夥伴節省金錢與時間成本。
+</p>
+                        <p class="wow animated fadeInUp">
+                            汎宇憑藉超過30年的網路服務經驗，提供業界最高標準資安機制，與全年每日24小時客服系統支援，用最完善的服務，提高效率、降低成本，兼顧安全與便利。
+</p>
+                    
+                      <p>&nbsp;</p>
+                        <p class="wow animated fadeInUp"><a href="services_einvoice.html" class="btn btn-primary btn-wide btn-icon">more >><i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 row wow animated bounceInRight"  data-parallax="scroll" data-image-src="/img/img7.jpg">
+                    <a href="#"><img src="img/e.png" alt="Feature Image" width="100%" class="img-responsive aligncenter"></a>
+            
+            </div>
+      </div>
+    </div></div>
+    <!--einvoice結束-->
+    
+    
+    <!--performance開始-->
+    <div class="performance">
+  
+      <div class="container">
+      
+        <div class="row">
+          <div class="col-md-12">
+            <div class="performance-title text-center">
+              <h2 class="wow animated fadeInUp">建置實績</h2>
+              <p>汎宇憑藉30年的專業網路服務經驗，持續用最規格的服務品質，提供合作夥伴最家的服務與解決方案。這些年來，我們與做伙伴攜手建置:</p>
+            </div>
+         
+        </div>
+        <div class="row  wow animated bounceInLeft">
+          <div class="col-md-3 col-sm-6"> <img src="img/picture_18.png" width="100%" height="">
+       </div>
+          <div class="col-md-3 col-sm-6"> <img src="img/picture_20.png" width="100%" height=""> </div>
+          <div class="col-md-3 col-sm-6"> <img src="img/picture_22.png" width="100%" height=""> </div>
+          <div class="col-md-3 col-sm-6"> <img src="img/picture_24.png" width="100%" height=""> </div>
+        </div>
+        
+      </div>
+    </div>
+    <!--performance結束-->
+   
+    <!--cooperation開始-->
+  <div class="cooperation">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="text-center">
+              <h2 class="wow animated fadeInUp">合作往來客戶</h2>
+            </div>
+          </div>
+          <div class="row wow animated fadeInUp">
+            <div class="col-md-12">
+              <div>
+                <ul id="flexiselDemo1">
+                  <li><img src="img/cooperation_31.png" width="147" height="98"></li>
+                  <li><img src="img/cooperation_33.png" width="147" height="98"></li>
+                  <li><img src="img/cooperation_35.png" width="147" height="98"></li>
+                  <li><img src="img/cooperation_38.png" width="147" height="98"></li>
+                  <li><img src="img/cooperation_40.png" width="147" height="98"></li>
+                  <li><img src="img/cooperation_42.png" width="147" height="98"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div></div>
+      <!--cooperation結束-->
+      <!--footer開始-->
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2">
+              <div>
+                <h3>服務方案</h3>
+                <ul class="link-list">
+                  <li><a href="#">通關網路服務</a></li>
+                  <li><a href="services_einvoice.html">電子發票</a></li>
+                  <li><a href="#">ICT資服暨專案服務</a></li>
+                  <li><a href="#">電子金融</a></li>
+                  <li><a href="#">企業服務</a></li>
+                  <li><a href="#">環保集點</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div>
+                <h3>案例實績</h3>
+                <ul class="link-list">
+                  <li><a href="#">汎宇客戶</a></li>
+                  <li><a href="#">獲獎肯定</a></li>
+                  <li><a href="#">近期案例</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div>
+                <h3>關於汎宇</h3>
+                <ul class="link-list">
+                  <li><a href="#">公司簡介</a></li>
+                  <li><a href="#">大事記</a></li>
+                  <li><a href="#">經營團隊</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div>
+                <h3>人才招募</h3>
+                <ul class="link-list">
+                  <li><a href="#">徵才訊息</a></li>
+                  <li><a href="#">公司福利</a></li>
+                  <li><a href="#">職缺連結</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div>
+                <h3>聯絡我們</h3>
+                <ul class="link-list">
+                  <li><a href="#">通關專線：0800-588-889</a></li>
+                  <li><a href="#">客服專線：02-2785-8898#8</a></li>
+                  <li><a href="#">115 台北市南港路三段50巷7號4樓</a></li>
+                  <li><a href="#">cs@universalec.com</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--footer2開始-->
+      <div class="footer2">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div>
+                <ul class="link-list">
+                  <li>© 2017 CopyRight 汎宇電商</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--footer2結束-->
+        <!--footer結束-->
+      </div>
+      <div class="bottombar"></div>
+    </div>
+    <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a> </div>
+
+</body>
+</html>
