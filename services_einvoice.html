@@ -1,286 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<title>汎宇電商─電子發票</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="" />
-<meta name="author" content="" />
-<!-- css -->
-<link href="css/bootstrap.min.css" rel="stylesheet" />
-<link href="css/bootstrap-theme.css" rel="stylesheet" />
-<link href="css/style.css" rel="stylesheet" />
-<link href="css/animate.css" rel="stylesheet" />
-<link href="css/hover-min.css" rel="stylesheet" />
-<!-- js -->
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <meta charset="utf-8">
+    <title>汎宇電商─電子發票</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- css -->
+    <link rel="shortcut icon" href="http://www.universalec.com/wp-content/uploads/2015/09/logo_f2.png" type="image/png">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/animate.css" rel="stylesheet" />
+    <link href="css/hover-min.css" rel="stylesheet" />
+    <!-- js -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 
-<script type="text/javascript" src="scripts/jquery.parallax-1.1.3.js"></script>
-<script type="text/javascript" src="scripts/jquery.localscroll-1.2.7-min.js"></script>
-<script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.parallax-1.1.3.js"></script>
+    <script type="text/javascript" src="scripts/jquery.localscroll-1.2.7-min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
 
-<script type="text/javascript" src="js/jquery.flexisel.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/jquery.flexisel.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
 
-<script type="text/javascript">
+    <script type="text/javascript">
+        $(window).load(function () {
+            $("#flexiselDemo1").flexisel({
 
-$(window).load(function() {
-    $("#flexiselDemo1").flexisel({
-								 
-								 visibleItems: 5,
-        itemsToScroll: 3,
-        animationSpeed: 450,
-        infinite: true,
-        navigationTargetSelector: null,
-						autoPlay: {
-            enable: true,
-            interval: 5000,
-            pauseOnHover: true
-        }     		 
-								 
-								 
-								 });
+                visibleItems: 5,
+                itemsToScroll: 3,
+                animationSpeed: 450,
+                infinite: true,
+                navigationTargetSelector: null,
+                autoPlay: {
+                    enable: true,
+                    interval: 5000,
+                    pauseOnHover: true
+                }
 
-});
-</script>
-<script>
-new WOW().init();
-</script>
-<script>
-wow = new WOW(
-                      {
-                      boxClass:'wow',//默認
-                      animateClass:'animated',//默認
-                      offset:0,//默認值
-                      mobile:true,//默認
-                      live:true //默認值
-                    }
-                    )
-                    wow.init();
-</script>
-<script type="text/javascript">
-$(function(){
-	//.parallax(xPosition, speedFactor, outerHeight) 設定選項:
-	//xPosition - 水平位置
-	//speedFactor - 滾動速度
-	$('#intro').parallax("50%", 0.1);
-	$('#second').parallax("50%", 0.1);
-	$('.bg').parallax("50%", 0.4);
-	$('#third').parallax("50%", 0.3);
-	$('.einvoice').parallax("50%", 0.1);
-	$('.performance').parallax("50%", 0.3);
-});
-</script>
+
+            });
+
+        });
+    </script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        wow = new WOW({
+            boxClass: 'wow', //默認
+            animateClass: 'animated', //默認
+            offset: 0, //默認值
+            mobile: true, //默認
+            live: true //默認值
+        })
+        wow.init();
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            //.parallax(xPosition, speedFactor, outerHeight) 設定選項:
+            //xPosition - 水平位置
+            //speedFactor - 滾動速度
+            $('#intro').parallax("50%", 0.1);
+            $('#second').parallax("50%", 0.1);
+            $('.bg').parallax("50%", 0.4);
+            $('#third').parallax("50%", 0.3);
+            $('.einvoice').parallax("50%", 0.1);
+            $('.performance').parallax("50%", 0.3);
+        });
+    </script>
 
 
 </head>
-<body>
-<div id="wrapper">
-  <!-- start header -->
-  <div class="topbar"></div>
-  <div class="header">
-    <div class="navbar navbar-default navbar-static-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-          <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo" /></a> </div>
-        <div class="navbar-collapse collapse ">
-          <ul class="nav navbar-nav">
-            <li class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle">關於汎宇<b class="caret"></b></a>
-             <ul class="dropdown-menu">
-                <li><a href="#">公司簡介</a></li>
-                <li><a href="#">大事紀</a></li>
-                <li><a href="#">經營團隊</a></li>
-             </ul>
-            </li>
-            <li class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle">服務方案<b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">通關網路服務</a></li>
-                <li><a href="services_einvoice.html">電子發票</a></li>
-                <li><a href="#">ICT資服暨專案服務</a></li>
-                <li><a href="#">電子金融</a></li>
-                <li><a href="#">企業服務</a></li>
-                <li><a href="#">環保集點</a></li>
-              </ul>
-            </li>
-            <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">案例實績<b class="caret"></b></a>
-             <ul class="dropdown-menu">
-                <li><a href="#">汎宇客戶</a></li>
-                <li><a href="#">獲獎肯定</a></li>
-                <li><a href="#">近期案例</a></li>
-             </ul>
-            </li>
-            <li><a href="#">客服中心</a></li>
-            <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">人才招募<b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">徵才訊息</a></li>
-                <li><a href="#">公司福利</a></li>
-                <li><a href="#">職缺連結</a></li>
-             </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- end header -->
-  
-  
-  <!-- banner開始 -->
-  <div>
-    <img src="img/einvoice_02.png" width="100%" height=""></div>
-   
-  <!-- bannerend -->
-  
-  
-  
 
-  
-  
-    <!--main-services開始-->
-  
-      <div class="container">
-      
-        <div class="row service-page">
-          
-       
-        
-         <div class="col-md-12"><h2 class="wow animated fadeInUp">協助企業e化增加效率 提供電子文件最高安全標準
+<body>
+    <div id="wrapper">
+        <!-- start header -->
+        <div class="header">
+
+            <div class="navbar navbar-default navbar-static-top">
+                <div class="topbar"></div>
+                <div class="container">
+
+                    <div class="navbar-header">
+
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                        <a class="navbar-brand  wow animated fadeInLeft" href="index.html"><img src="img/logo.png" alt="logo" /></a>
+                    </div>
+                    <div class="navbar-collapse collapse ">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle">關於汎宇<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">公司簡介</a></li>
+                                    <li><a href="#">大事紀</a></li>
+                                    <li><a href="#">經營團隊</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle">服務方案<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">通關網路服務</a></li>
+                                    <li><a href="services_einvoice.html">電子發票</a></li>
+                                    <li><a href="#">ICT資服暨專案服務</a></li>
+                                    <li><a href="#">電子金融</a></li>
+                                    <li><a href="#">企業服務</a></li>
+                                    <li><a href="services_greenpoint.html">環保集點</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">案例實績<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">汎宇客戶</a></li>
+                                    <li><a href="#">獲獎肯定</a></li>
+                                    <li><a href="#">近期案例</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">客服中心</a></li>
+                            <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">人才招募<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">徵才訊息</a></li>
+                                    <li><a href="#">公司福利</a></li>
+                                    <li><a href="#">職缺連結</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end header -->
+
+
+        <!-- banner開始 -->
+        <div class="ban"><img src="img/einvoice_02.png" width="100%" height=""></div>
+
+        <!-- bannerend -->
+
+
+
+
+
+
+        <!--main-services開始-->
+
+        <div class="container">
+
+            <div class="row service-page">
+
+
+
+                <div class="col-md-12">
+                    <h2 class="wow animated fadeInUp">協助企業e化增加效率 提供電子文件最高安全標準
 
 </h2></div>
-         <div class="col-md-12"><h3  class="wow animated fadeInUp">服務簡介：</h3></div>
-         <div class="col-md-12 wow animated fadeInUp"><span style="text-indent:20px;margin-left:37px;"> 汎宇長期投注心力於電子發票推行，自2002年起擔任「電子發票系統加值服務中心」，憑藉針對各類客戶，提供B2G、B2B與B2C等多樣完整的電子發票解決方案，協助合作夥伴節省金錢與時間成本。</span><br />
-<span style="text-indent:20px;margin-left:37px;"> 汎宇累積30年以上的網路服務經驗，知道如此頻繁且牽涉帳款、稅務的資料傳遞，最重要的就是「安全」。汎宇具備ISO 27001、CNS17800雙資安認證，用最高標準的資料加密及安全機制，保障資料傳輸過程的完整、來源辨識、隱密與不可否認性。</span>
-</div>
+                <div class="col-md-12">
+                    <h3 class="wow animated fadeInUp">服務簡介：</h3></div>
+                <div class="col-md-12 wow animated fadeInUp"><span style="text-indent:20px;margin-left:37px;"> 汎宇長期投注心力於電子發票推行，自2002年起擔任「電子發票系統加值服務中心」，憑藉針對各類客戶，提供B2G、B2B與B2C等多樣完整的電子發票解決方案，協助合作夥伴節省金錢與時間成本。</span>
+                    <br />
+                    <span style="text-indent:20px;margin-left:37px;"> 汎宇累積30年以上的網路服務經驗，知道如此頻繁且牽涉帳款、稅務的資料傳遞，最重要的就是「安全」。汎宇具備ISO 27001、CNS17800雙資安認證，用最高標準的資料加密及安全機制，保障資料傳輸過程的完整、來源辨識、隱密與不可否認性。</span>
+                </div>
 
 
-      </div>
-    </div>
-    <!--main-service結束-->
-    <div class="service-page-content">
-     <div class="container">
-   <div class="col-md-12 wow animated flipInX"><img src="img/einvoice_05.png" width="100%" height=""></div>
-  </div></div>
-  
-      <div class="container">
-     <div class="row service-page">
-
-         <div class="col-md-12"><h3 class="wow animated fadeInUp">服務項目</h3></div>
-    
-        
-        <div class="col-md-4 col-sm-6 wow animated fadeInUp">。電子發票Web化作業操作系統</div>
-<div class="col-md-8 col-sm-6 wow animated fadeInUp">。憑證開立、收取、作廢、銷貨、折讓、查詢等各項作業</div>
-<div class="col-md-4 col-sm-6 wow animated fadeInUp">。介接企業電子商務系統和ERP系統</div>
-<div class="col-md-8 col-sm-6 wow animated fadeInUp">。線上安控處理作業整合機制</div>
-<div class="col-md-4 col-sm-6 wow animated fadeInUp">。專案顧問規劃與系統整合支援服務</div>
-<div class="col-md-8 col-sm-6 wow animated fadeInUp">。雙主機與機房備援</div>
-<div class="col-md-4 col-sm-6 wow animated fadeInUp">。全年24HR客服系統支援</div>
-
-
-
-  <div class="col-md-12"><h3 class="wow animated fadeInUp">成功案例：</h3></div>
-    <div class="col-md-12 wow animated fadeInUp">大潤發、台糖、桃園捷運、億光電子等2000家以上合作夥伴</div>
-<div class="col-md-12"><h3 class="wow animated fadeInUp">業務聯繫：</h3></div>
-    <div class="col-md-4 wow animated fadeInUp">02-27858898#669 <span class="blue">葉小姐(業務窗口)</span></div> <div class="col-md-4 wow animated fadeInUp">02-27858898#258 <span class="blue">富小姐(業務窗口)</span></div>
-    <div class="col-md-4 wow animated fadeInUp">02-27858898#632 <span class="blue">張先生(業務窗口)</span></div>
-<div class="col-md-12 wow animated fadeInUp">email： cs@universalec.com </div>
-
-
-
-
-       
-      </div>
-    </div>   
-    
-    
-    
-    
-    
-    
-    
-    
-    
-      <!--footer開始-->
-      <div class="footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-2">
-              <div>
-                <h3>服務方案</h3>
-                <ul class="link-list">
-                  <li><a href="#">通關網路服務</a></li>
-                  <li><a href="services_einvoice.html">電子發票</a></li>
-                  <li><a href="#">ICT資服暨專案服務</a></li>
-                  <li><a href="#">電子金融</a></li>
-                  <li><a href="#">企業服務</a></li>
-                  <li><a href="#">環保集點</a></li>
-                </ul>
-              </div>
             </div>
-            <div class="col-md-2">
-              <div>
-                <h3>案例實績</h3>
-                <ul class="link-list">
-                  <li><a href="#">汎宇客戶</a></li>
-                  <li><a href="#">獲獎肯定</a></li>
-                  <li><a href="#">近期案例</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-2">
-              <div>
-                <h3>關於汎宇</h3>
-                <ul class="link-list">
-                  <li><a href="#">公司簡介</a></li>
-                  <li><a href="#">大事記</a></li>
-                  <li><a href="#">經營團隊</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-2">
-              <div>
-                <h3>人才招募</h3>
-                <ul class="link-list">
-                  <li><a href="#">徵才訊息</a></li>
-                  <li><a href="#">公司福利</a></li>
-                  <li><a href="#">職缺連結</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div>
-                <h3>聯絡我們</h3>
-                <ul class="link-list">
-                  <li><a href="#">通關專線：0800-588-889</a></li>
-                  <li><a href="#">客服專線：02-2785-8898#8</a></li>
-                  <li><a href="#">115 台北市南港路三段50巷7號4樓</a></li>
-                  <li><a href="#">cs@universalec.com</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-      <!--footer2開始-->
-      <div class="footer2">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div>
-                <ul class="link-list">
-                  <li>© 2017 CopyRight 汎宇電商</li>
-                </ul>
-              </div>
+        <!--main-service結束-->
+        <div class="service-page-content">
+            <div class="container">
+                <div class="col-md-12 wow animated flipInX"><img src="img/einvoice_05.png" width="100%" height=""></div>
             </div>
-          </div>
         </div>
-        <!--footer2結束-->
-        <!--footer結束-->
-      </div>
-      <div class="bottombar"></div>
+
+        <div class="container">
+            <div class="row service-page">
+
+                <div class="col-md-12">
+                    <h3 class="wow animated fadeInUp">服務項目</h3></div>
+
+
+                <div class="col-md-4 col-sm-6 wow animated fadeInUp">。電子發票Web化作業操作系統</div>
+                <div class="col-md-8 col-sm-6 wow animated fadeInUp">。憑證開立、收取、作廢、銷貨、折讓、查詢等各項作業</div>
+                <div class="col-md-4 col-sm-6 wow animated fadeInUp">。介接企業電子商務系統和ERP系統</div>
+                <div class="col-md-8 col-sm-6 wow animated fadeInUp">。線上安控處理作業整合機制</div>
+                <div class="col-md-4 col-sm-6 wow animated fadeInUp">。專案顧問規劃與系統整合支援服務</div>
+                <div class="col-md-8 col-sm-6 wow animated fadeInUp">。雙主機與機房備援</div>
+                <div class="col-md-4 col-sm-6 wow animated fadeInUp">。全年24HR客服系統支援</div>
+
+
+
+                <div class="col-md-12">
+                    <h3 class="wow animated fadeInUp">成功案例：</h3></div>
+                <div class="col-md-12 wow animated fadeInUp">大潤發、台糖、桃園捷運、億光電子等2000家以上合作夥伴</div>
+                <div class="col-md-12">
+                    <h3 class="wow animated fadeInUp">業務聯繫：</h3></div>
+                <div class="col-md-4 wow animated fadeInUp"><img style="margin-top:-4px; margin-right:6px" src="img/Phone-icon-small.png" width="" height="">02-27858898#669 <span class="blue">葉小姐</span></div>
+                <div class="col-md-4 wow animated fadeInUp"><img style="margin-top:-4px; margin-right:6px" src="img/Phone-icon-small.png" width="" height="">02-27858898#258 <span class="blue">富小姐</span></div>
+                <div class="col-md-4 wow animated fadeInUp"><img style="margin-top:-4px; margin-right:6px" src="img/Phone-icon-small.png" width="" height="">02-27858898#632 <span class="blue">張先生</span></div>
+                <div class="col-md-12 wow animated fadeInUp"><img style="margin-top:-4px; margin-right:6px" src="img/Email-icon-small.png" width="" height="">聯絡信箱：cs@universalec.com </div>
+
+
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <!--footer開始-->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <div>
+                            <h3>服務方案</h3>
+                            <ul class="link-list">
+                                <li><a href="#">通關網路服務</a></li>
+                                <li><a href="services_einvoice.html">電子發票</a></li>
+                                <li><a href="#">ICT資服暨專案服務</a></li>
+                                <li><a href="#">電子金融</a></li>
+                                <li><a href="#">企業服務</a></li>
+                                <li><a href="services_greenpoint.html">環保集點</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div>
+                            <h3>案例實績</h3>
+                            <ul class="link-list">
+                                <li><a href="#">汎宇客戶</a></li>
+                                <li><a href="#">獲獎肯定</a></li>
+                                <li><a href="#">近期案例</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div>
+                            <h3>關於汎宇</h3>
+                            <ul class="link-list">
+                                <li><a href="#">公司簡介</a></li>
+                                <li><a href="#">大事記</a></li>
+                                <li><a href="#">經營團隊</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div>
+                            <h3>人才招募</h3>
+                            <ul class="link-list">
+                                <li><a href="#">徵才訊息</a></li>
+                                <li><a href="#">公司福利</a></li>
+                                <li><a href="#">職缺連結</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div>
+                            <h3>聯絡我們</h3>
+                            <ul class="link-list">
+                                <li><a href="#">通關專線：0800-588-889</a></li>
+                                <li><a href="#">客服專線：02-2785-8898#8</a></li>
+                                <li><a href="#">115 台北市南港路三段50巷7號4樓</a></li>
+                                <li><a href="#">cs@universalec.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--footer2開始-->
+        <div class="footer2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div>
+                            <ul class="link-list">
+                                <li>© 2017 CopyRight 汎宇電商</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--footer2結束-->
+            <!--footer結束-->
+        </div>
+        <div class="bottombar"></div>
     </div>
     <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a> </div>
 
 </body>
+
 </html>

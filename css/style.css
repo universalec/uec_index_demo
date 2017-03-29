@@ -58,11 +58,19 @@ h3, h4, h5, h6 {
 /*header*/
 .topbar{
 	background-color: #c5181a;
+	
 	padding:3px 0;
+	
+	
 }
 
 .header .navbar {
     margin-bottom: 0;
+	 position: fixed;
+	
+	width:100%;
+	/*border-top:12px solid #c5181a;*/
+    
 }
 
 .navbar-brand {
@@ -266,7 +274,9 @@ color: #1891EC;
 /*廣告輪播*/
 
 .banner{display:block;}
-
+.ban{
+padding-top:89px;
+}
 .carousel-control.left {
 	background-image:none;
 	}
@@ -350,6 +360,17 @@ main-services img
 .performance-title p{
 	 font-size:16px;
 	 /*text-align:left; */
+}
+
+.counter {
+  display: table-cell;
+  margin:1.5%;
+  font-size:50px;
+  background-color: #FF6F6F;
+  width:200px;
+  border-radius: 50%;
+  height:200px;
+  vertical-align: middle;
 }
 
 /*建置實績*/
@@ -1587,6 +1608,10 @@ article img.pull-right, article .align-right{
 @media (max-width: 767px) {
 	/*廣告輪播*/
 /*.banner{display:none;}*/
+
+.ban{
+padding-top:62px;
+}
 .carousel-control .glyphicon-chevron-left{display:none;}
 .carousel-control .glyphicon-chevron-right{display:none;}
 
