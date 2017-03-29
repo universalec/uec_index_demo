@@ -340,6 +340,10 @@ main-services img
 .space {
 	display:block;
 }
+
+.link{
+display:inline;}
+
 /*建置實績*/
 .performance{
 	padding:50px 0;
@@ -362,15 +366,57 @@ main-services img
 	 /*text-align:left; */
 }
 
+.performance_bg1 {
+	position:relative;
+	text-align:center;
+	color:#ffffff;
+	width:220px;
+	border-radius: 50%;
+	height:220px;
+	background-image: url(../img/count_bg1.png);
+}
+
+.performance_bg2 {
+	position:relative;
+	text-align:center;
+	color:#ffffff;
+	width:220px;
+	border-radius: 50%;
+	height:220px;
+	background-image: url(../img/count_bg2.png);
+}
+.performance_bg3 {
+	position:relative;
+	text-align:center;
+	color:#ffffff;
+	width:220px;
+	border-radius: 50%;
+	height:220px;
+	background-image: url(../img/count_bg3.png);
+}
+.performance_bg4 {
+	position:relative;
+	text-align:center;
+	color:#ffffff;
+	width:220px;
+	border-radius: 50%;
+	height:220px;
+	background-image: url(../img/count_bg4.png);
+}
+
+.performance_s_title {
+    text-align:center;
+	color:#000000;
+
+}
 .counter {
-  display: table-cell;
-  margin:1.5%;
-  font-size:50px;
-  background-color: #FF6F6F;
-  width:200px;
-  border-radius: 50%;
-  height:200px;
-  vertical-align: middle;
+	position:absolute;
+	display: table-cell;
+	margin:1.5%;
+	font-size:50px;
+	vertical-align: middle;
+	left: 30px;
+	top: 120px;
 }
 
 /*建置實績*/
@@ -1541,7 +1587,10 @@ article img.pull-right, article .align-right{
 /*  Media queries 
 ============================= */
 
-@media (min-width: 768px) and (max-width: 979px) {
+
+@media (min-width: 768px) and (max-width: 991px) {
+.link{
+display:block;}
 /*廣告輪播*/
 .carousel-control {
 	position: absolute;
@@ -1606,6 +1655,8 @@ article img.pull-right, article .align-right{
 }
 
 @media (max-width: 767px) {
+.link{
+display:block;}
 	/*廣告輪播*/
 /*.banner{display:none;}*/
 
